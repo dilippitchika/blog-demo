@@ -49,6 +49,10 @@
   text-decoration: none;
 }
 
+.email{
+  color:#065a6d;
+}
+
 @media screen and (max-width:1023px){
   .App-header{
     flex-direction: column;
