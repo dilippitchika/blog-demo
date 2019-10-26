@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Caveat|Work+Sans&display=swap');
 
 .imageHero{
-  padding-top:6rem;
-  padding-right: 10%;
+  padding-top:10rem;
+  padding-right: 4rem;
 }
 
 .imageHero img{
-  height: 400px;
+  height: 300px;
 }
 .App-header{
   display: flex;
   flex-direction: row;
-  margin-top: 8rem;
-  margin-left:6rem;
+  min-height: 100vh;
+  margin-top: 4em;
+  margin-left:8em;
   font-family: 'Work Sans', sans-serif;
 }
 
@@ -24,7 +25,7 @@
   letter-spacing: 0.2rem;
   color:#212121;
 }
-.App-header div{
+.App-header .buttonsHolder{
   margin-top:48px;
 }
 
@@ -46,4 +47,30 @@
   margin-right: 24px;
   border-radius: 24px;
   text-decoration: none;
+}
+
+@media screen and (max-width:1023px){
+  .App-header{
+    flex-direction: column;
+    margin-top: 10%;
+    margin-left:10%;
+    margin-right:10%;
+  }
+  .imageHero {
+    display: none;
+  }
+  .App-header h1{
+    margin-bottom: 0px;
+  }
+  .buttonsHolder{
+    margin-bottom: 24px;
+  }
+  .info{
+    max-width: 95%;
+  }
+}
+@media screen and (max-width:1280px){
+  .imageHero img{
+    width: 268px;
+  }
 }
